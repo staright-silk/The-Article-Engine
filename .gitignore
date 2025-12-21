@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Django
+db.sqlite3
+.env
+
+# Whoosh index
+indexdir/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
