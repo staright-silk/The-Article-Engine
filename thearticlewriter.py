@@ -34,6 +34,11 @@ and experiences through written language, stories, poetry, and drama."""
 
 writer.commit()
 
+writer.add_document(
+    title="What is Life?",
+    content="""tanziruz"""
+)
+writer.commit()
 def search(query_string):
     with ix.searcher(weighting=TF_IDF()) as searcher:
         parser = MultifieldParser(["title", "content"], ix.schema)
